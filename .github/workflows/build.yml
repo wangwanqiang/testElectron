@@ -22,6 +22,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
+     
+      - name: install electron-builder
+        run: |
+          ls -al
+          npm i -g electron-builder
+      
 
       - name: Build/release Electron app
         uses: samuelmeuli/action-electron-builder@v1
