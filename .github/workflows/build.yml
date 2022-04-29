@@ -23,10 +23,13 @@ jobs:
         with:
           node-version: 14
 
-      - name: Build
+      - name: install electron-builder
         run: |
-         npm i -g electron-builder
-        #  npm install electron
+        #  npm i -g electron-builder
+         npm install electron -g
+         electron -v #查看electron版本，查看是否安装
+         npm update electron -g #更新electron版本
+        
 
       - name: Electron Builder Action
         uses: samuelmeuli/action-electron-builder@v1.6.0
