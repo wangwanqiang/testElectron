@@ -25,10 +25,9 @@ jobs:
 
       - name: install electron-builder
         run: |
-        #  npm i -g electron-builder
-         npm install electron -g
-         electron -v #查看electron版本，查看是否安装
-         npm update electron -g #更新electron版本
+          npm install electron -g
+          electron -v
+          npm update electron -g
         
 
       - name: Electron Builder Action
